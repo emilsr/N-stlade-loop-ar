@@ -75,7 +75,7 @@ namespace nastlade_loopar
             }
             Console.ReadKey();
 
-                */
+                
 
 
             //övning4
@@ -96,10 +96,59 @@ namespace nastlade_loopar
                 Console.WriteLine();
             }
             Console.ReadKey();
+      
+
+
+            //övning5 
+            for (int i = 0; i < 7; i++)
+            {
+                for (int x = 0; x < 7; x++)
+                {
+                    if (x == i || i + x == 6)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(".");
+                    }
+                        
+                    }
+                    Console.WriteLine();
+                }
+                 Console.ReadKey();
+                 */
+
+            //övning6 
+            for (int i = 0; i < 7; i++)
+            {
+                for (int x = 0; x < 7; x++)
+                {
+                    if ((x - i<0 || i + x < 6) && (x - i>0 || i + x > 6))
+                    {
+                        Console.Write(".");
+                    }
+                    else
+                    {
+                        Console.Write("*");
+                    }
+
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+
+
+
+
         }
 
+
+    }
+
+        
 }
-}
+
 
 
 
