@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace nastlade_loopar
 {
-    //övning2 
+
 
     class Program
     {
         static void Main(string[] args)
         {
+            //övning2 
             /*
             for (int y = 0; y < 11; y++)
             {
@@ -145,20 +146,20 @@ namespace nastlade_loopar
             {
                 for (int x = 0; x < 9; x++)
                 {
-                    if ((x - i < 4 || i + x < 12) && (x - i > 4 || i + x > 12))
+                    if (x + i < 4 || x - i > 4 || i + x > 12 || (i > 4 && i - x > 4))
                     {
-                        Console.Write("*");
+                        Console.Write(".");
                     }
                     else
                     {
-                        Console.Write(".");
+                        Console.Write("*");
                     }
 
                 }
                 Console.WriteLine();
             }
             Console.ReadKey();
-            
+
 
 
 
@@ -167,8 +168,10 @@ namespace nastlade_loopar
 
     }
 
-        
+
 }
+
+
 
 
 
